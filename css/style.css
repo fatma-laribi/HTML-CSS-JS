@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+:root{
+    --main-color: #d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border: .1rem solid rgba(255,255,255,.3);
+}
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+    text-decoration: none;
+}
+.nav-link{
+    transition: 0.5s !important;
+}
+.nav-link:hover{ /*the icons disappeared*/
+    border-bottom: var(--border);
+    color: var(--main-color) !important;
+}
+.navbar{
+    background-color:#010103!important;
+    border-bottom: var(--border);
+    
+}
+
+
+.icons{
+    width: 50px;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.fa-search:before{
+    width: 5px;   
+}
+li{
+    margin:10px;
+    padding:10px;
+}
+
+.navbar-brand:hover{
+    border-bottom:none;
+}
+
+
+.dropdown-menu{
+    background-color: #010103;
+    
+}
+.dropdown-item{
+    color:var(--main-color);
+    font-weight:400;
+}
+.dropdown-item:hover{
+    color:#010103 !important;
+    font-weight: 500;
+}
+.fas:hover{
+    border-bottom: 0 !important;
+    color:#d3ad7f !important;
+}
+nav{
+    position: fixed !important; 
+    top: 0;
+    width: 100%;
+}
+
+
+.test{
+    background-image: url("../images/home-img.jpeg") ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height:700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+
+}
+p.title{
+    text-transform:uppercase;
+    color:white;
+    font-weight: 40%;
+    font-size: 80px;
+    margin:12px;
+   
+}
+.desc{
+    color:hsl(30, 2%, 54%);
+    font-weight: 300;
+    margin:12px;
+}
+div.button{
+    background-color: #d3ad7f;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    width:100px;
+    padding: 7px;
+    margin-left: 12px;
+    white-space: nowrap;
+}
+.button{
+    transition: 0.3s;
+}
+.button:hover{
+    font-weight: bolder;
+    font-size: 500;
+    width:120px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+    .title{
+        text-align: center !important;
+    }
+    .desc{
+        text-align:center !important;
+    }
+    .all-home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.body-row{
+
+    background-color: #010103;
+    
+    }
+.titre{
+    font-weight: 700;
+    font-size: 50px;
+}
+.titre p {
+    text-transform: uppercase;
+    margin:7px;
+}
+.first{
+    color:#d3ad7f;
+}
+.second{
+    color:white;
+}
+.titre div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.row1{
+    margin:50px;
+    display:flex;
+    flex-direction: row;
+    }
+    @media only screen and (max-width: 1245px){
+        .row1{
+            flex-direction: column;
+        }
+        .column2{
+            width:100% !important;
+        }
+    }
+@media only screen and (min-width: 768px){
+        .row1{display: flex;}
+    }
+.column2{
+    background-color: #13131a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:50%;
+}
+.title-about{
+    padding:10px;
+    color:white;
+    text-transform: capitalize;
+    font-size: 120%;
+
+}
+
+.imgcoffee{
+    width:100%;
+}
+.body-about{
+    color:rgba(255,255,255,.3);
+    font-weight: 300;
+    padding:10px;
+}
+.coffee-item{
+    background-color: #010103;
+    border: 0.25px solid rgba(255,255,255,.3);
+    min-height:300px;
+    width:300px;
+    margin:5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+}
+.menu-name{
+    color:inherit;
+    text-transform: capitalize;
+}
+.menu-price{
+    color:inherit;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.old-price{
+    font-size: small;
+    color:inherit;
+    text-decoration: line-through;
+    font-weight: 100;
+    margin:7px;
+}
+.price{
+    display:flex;
+    align-items: baseline;
+}
+.coffee{
+    max-width: 1000px;
+    
+}
+.coffee-item{
+    transition: .7s;
+}
+.coffee-item:hover{
+    background-color: white;
+    color:black;
+} 
+
+.row{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
